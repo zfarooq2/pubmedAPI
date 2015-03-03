@@ -1,0 +1,26 @@
+<div class="page" data-ng-controller="resultsController">
+
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>PubMed E-search Page</strong></div>
+        <div class="panel-body">
+
+            <table>
+                <thead>
+                <tr><th colspan="4">DR. KAPIL BHARTI PUBMED E-SEARCH RESULTS</th></tr>
+                <input type="text" ng-model="nameFilter" placeholder="Search..."/>
+                </thead>
+                <tbody>
+                <tr><th colspan="4">PMID</th></tr>
+                <tr ng-repeat="item in items| filter: nameFilter">
+                    <td>{{$index + 1}}
+                        {{item}}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div data-ng-controller= "scheduleAPIservice"></div>
+        </div>
+    </section>
+
+</div>
+
