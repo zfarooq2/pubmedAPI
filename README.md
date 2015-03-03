@@ -1,4 +1,4 @@
-# ls-seed
+# pubmed API
 
 This project is an application skeleton to build Apps for Windows, Mac, Android and IOS platforms using AngularJS, RequireJS and node-webkit.
 
